@@ -1,0 +1,18 @@
+let nombre1 = prompt('Nombre 1');
+let edad1 = parseInt(prompt('Edad 1:'));
+
+let nombre2 = prompt('Nombre 2');
+let edad2 = parseInt(prompt('Edad 2:'));
+
+let nombre3 = prompt('Nombre 3');
+let edad3 = parseInt(prompt('Edad 3:'));
+
+let edadMaxima = Math.max(edad1,edad2,edad3)
+
+if(edadMaxima == edad1){
+    document.write("El mayor es: " + nombre1);
+}else if(edadMaxima == edad2){
+    document.write("El mayor es: " + nombre2);
+}else if(edadMaxima == edad3){
+    document.write("El mayor es: " + nombre3);
+}
