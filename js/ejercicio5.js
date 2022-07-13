@@ -1,6 +1,6 @@
 do {
   let dni = parseInt(prompt("Ingrese su numero de documento"));
-  if (dni <= 99999999) {
+  if (dni >= 0 && dni <= 99999999) {
     let resto = dni % 23;
     switch (resto) {
       case 0:
@@ -75,7 +75,7 @@ do {
       default:
         alert("Numero erroneo");
     }
-  } else if (dni != undefined) {
-    alert(Number(dni) + " No es un numero de documento");
+  } else {
+    alert("No ingresaste un numero correcto");
   }
-} while (confirm("¿Desea escribir otro numero de documento?"))
+} while (confirm("¿Desea escribir otro numero de documento?"));
