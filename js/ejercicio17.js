@@ -9,4 +9,4 @@ for(let i = 0; i < frase.length; i++){
         i = frase.length
     }
 }
-document.write('posicion de vocal: ' + posicion)
+document.write('posicion de la primera vocal: ' + posicion)
